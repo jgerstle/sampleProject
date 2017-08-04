@@ -1,0 +1,22 @@
+<md-dialog aria-label="Add User">
+	<form>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>Add User</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="vm.close()">
+					<i class="glyphicon glyphicon-remove"></i>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content style="width:500px;height:450px">
+			<add-user-form validate="vm.validate" first-name="vm.firstName" last-name="vm.lastName" username="vm.username" password="vm.password"></add-user-form>
+		</md-dialog-content>
+
+		<md-dialog-actions layout="row">
+			<md-button ng-click="vm.save()" style="margin-right:20px;" >
+				Save
+			</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>

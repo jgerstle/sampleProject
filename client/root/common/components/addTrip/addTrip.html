@@ -1,0 +1,39 @@
+<md-dialog aria-label="Add Trip">
+	<form>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>Add Trip</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="vm.close()">
+					<i class="glyphicon glyphicon-remove"></i>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content style="width:500px;height:400px">
+			<div layout="row" layout-align="center center">
+				<md-input-container class="md-block">
+					<label>Start Date</label>
+					<md-datepicker ng-model="vm.startDate" md-open-on-focus="true"></md-datepicker>
+				</md-input-container>
+				<md-input-container class="md-block">
+					<label>End Date</label>
+					<md-datepicker ng-model="vm.endDate" md-open-on-focus="true"></md-datepicker>
+				</md-input-container>
+			</div>
+			<md-input-container class="md-block">
+				<label>Destination</label>
+				<input ng-model="vm.destination">
+			</md-input-container>
+			<md-input-container class="md-block">
+				<label>Comment</label>
+				<input ng-model="vm.comment">
+			</md-input-container>
+		</md-dialog-content>
+
+		<md-dialog-actions layout="row">
+			<md-button ng-click="vm.save()" style="margin-right:20px;" >
+				Save
+			</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>

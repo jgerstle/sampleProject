@@ -1,0 +1,36 @@
+<md-sidenav class="md-sidenav-left side-Menu" md-component-id="left">
+
+	<md-content layout-margin>
+		<md-list flex>
+			<md-list-item class="md-1-line" ng-click="null" ui-sref="dashboard">
+				<div class="md-list-item-text" layout="column">
+					<h4>Dashboard</h3>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-1-line" ng-click="null" ui-sref="userMaintenance" ng-if="vm.isUserMaintainer">
+				<div class="md-list-item-text" layout="column">
+					<h4>User Maintenance</h3>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-1-line" ng-click="null" ui-sref="logout">
+				<div class="md-list-item-text" layout="column">
+					<h4>Log Out</h3>
+				</div>
+			</md-list-item>
+		</md-list>
+	</md-content>
+
+</md-sidenav>
+
+<!--<md-toolbar class="md-hue-2"><div class="toolbarText">{{vm.title}}</div></md-toolbar>-->
+
+<md-toolbar class="md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-click="vm.toggleMenu()">
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </md-button>
+
+        <h2>{{vm.title}}</h2>
+
+      </div>
+    </md-toolbar>

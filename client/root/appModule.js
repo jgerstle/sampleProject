@@ -1,0 +1,19 @@
+angular.module('app', [
+	'ui.router', 
+	'app.home', 
+	'app.factories', 
+	'app.components',
+	'ngMaterial',
+	'app.login',
+	'app.signup',
+	'app.dashboard',
+	'ui.grid',
+	'ui.grid.edit',
+	'ui.grid.cellNav',
+	'ui.grid.rowEdit',
+	'ui.grid.pagination',
+	'app.directives',
+	'app.userMaintenance',
+	'app.filters',
+	'app.logout'
+]);

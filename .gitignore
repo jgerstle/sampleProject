@@ -1,0 +1,5 @@
+node_modules
+client/app.min.js
+client/*.ttf
+client/*.svg
+.env

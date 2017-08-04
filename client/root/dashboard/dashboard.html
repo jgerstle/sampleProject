@@ -1,0 +1,10 @@
+<side-menu-header-bar title="vm.title"></side-menu-header-bar>
+<md-input-container class="md-block" flex-gt-sm ng-if='vm.users'>
+	<label>Select User</label>
+	<md-select ng-model="vm.user" ng-change="vm.loadTrips()">
+		<md-option ng-repeat="user in vm.users" value="{{user.id}}">
+			{{user.username}}
+		</md-option>
+	</md-select>
+</md-input-container>
+<div ui-grid="vm.gridOptions" class="tripsGrid"  ui-grid-edit ui-grid-row-edit ui-grid-pagination></div>
